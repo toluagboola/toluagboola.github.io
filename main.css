@@ -1,0 +1,361 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #ffffff;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background: #ffffff;
+  border-bottom: 3px solid #507DBC;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #E31B6D;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item a {
+  color: #210203;
+  font-size: 1.6em;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+} 
+
+.nav-item:hover {
+  color: #E31B6D;
+}
+
+.nav-item:hover a {
+  color: #E31B6D;
+}
+
+.main {
+  margin: 0 auto;
+  /* padding-top: 5%; */
+}
+
+#home {
+  height: 100vh;
+}
+
+.intro {
+  padding-top: 40vh;
+  padding-left: 100px;
+  font-size: 3em;
+  width: 750px;
+}
+
+.highlight {
+  color: #E31B6D;
+  text-decoration: none;
+}
+
+#about {
+  /* 
+  width: 100%;
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+  position: relative; */
+  height: 110vh;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.h3 {
+  padding-top: 5%;
+  font-size: 2.5em;
+}
+
+.about-contents {
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#my-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 25px;
+  margin: 10px;
+}
+
+.description {
+  margin: 10px;
+  font-size: 1.8em;
+  line-height: 1.7;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.contact-link {
+  color: #E31B6D;
+  /* margin-bottom: 30px; */
+  text-decoration: none;
+  font-size: 1.8em;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+#projects {
+  /* width: 100%; */
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+.projects-heading {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.project-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto 50px;
+  /* flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px; */
+}
+
+.project-item {
+  margin: 20px;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 10px;
+  padding: 20px;
+}
+
+.project-image {
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.hex-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607094908/2020-12-04_13.07.45_tolu-color-picker.surge.sh_f5725fbf68e7.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.quote-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607456688/2020-12-08_20.44.38_tolu-quote-machine.surge.sh_8808836e8863.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.weather-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607456811/2020-12-08_20.46.38_tolu-weather-app.surge.sh_a166d6e6746c.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.fcc-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607457341/2020-12-08_20.55.22_5889ad287e2b.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.simon-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607456043/2020-12-08_20.31.51_e7b14659cea6.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.unsplash-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607456600/2020-12-08_20.42.58_tolu-unsplash-app.surge.sh_d75ed0ea5b8d.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.project-btn:focus {
+  outline: none;
+}
+
+.btn{
+  width: 170px;
+  height: 40px;
+  border: none;
+  /* position: relative; */
+  /* left: 30%; */
+  background: #f5f5f5;
+  border-radius: 5px;
+  transition: background 0.8s;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #507DBC;
+}
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.contact-h3 {
+  margin-bottom: 10px;
+}
+
+.contact-sentence {
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 10px;
+}
+
+.form {
+  /* margin: 20px auto 0 auto; */
+  display: inline-block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.form-input {
+  display: block;
+  width: 500px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  padding: 5px;
+  font-size: 1.6em;
+  font-family: 'Lato', sans-serif;
+  background: #ffffff;
+}
+
+#message {
+  width: 500px;
+  height: 130px;
+  border: none;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 1.7em;
+  font-family: 'Lato', sans-serif;
+  background: #ffffff;
+}
+
+#message:focus, .form-input:focus {
+  outline: none;
+}
+
+.submit {
+  margin: 0 auto;
+  text-align: right;
+  width: 100%;
+}
+ 
+.submit-btn {
+  width: 150px;
+  height: 40px;
+  float: right;
+  margin: 10px;
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.8s;
+  border: 2px solid #000000;
+}
+
+.submit-btn:hover {
+  border: 3px solid #507DBC;
+}
+
+footer {
+  background: #507DBC;
+  text-align: center;
+}
+
+.social-links {
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+/* 
+.social-item {
+  padding-left: 3px;
+  padding-right: 3px;
+} */
+
+footer li {
+  display: inline;
+  font-size: 1.5em;
+}
+
+footer li a {
+  color: #ffffff;
+  padding-left: 3px;
+  padding-right: 3px;
+  /* letter-spacing: 1px; */
+  text-decoration: none;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+.footnote {
+  color: #ffffff;
+  font-size: 1.4em;
+  padding-bottom: 50px;
+}
