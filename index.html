@@ -9,8 +9,8 @@
 	<body>
 		<div class="container">
 			<header>
-				<nav class="navbar">
-					<a href="#home"><p class="logo">TOLUWANIMI AGBOOLA</p></a>
+				<div class="logo">TOLUWANIMI AGBOOLA</div>
+				<nav class="navbar js-navbar">
 					<ul class="nav-links">
 						<li class="nav-item"><a href="#home">HOME</a></li>
 						<li class="nav-item"><a href="#about">ABOUT</a></li>
@@ -18,12 +18,18 @@
 						<li class="nav-item"><a href="#contact">CONTACT</a></li>
 					</ul>
 				</nav>
+
+				<span class="hamburger-menu"  onclick="showMenu(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</span>
 			</header>
 
 			<div class="main">
 				<!-- Home page -->
 				<section id="home">
-					<p class="intro">Hi! I'm <span class="highlight">Toluwanimi Agboola</span>, and I'm a web developer based in Lagos, Nigeria. I'm focused on creating clean and user-friendly experiences</p>
+					<p class="intro">Hi! I'm <span class="highlight">Toluwanimi Agboola</span>, and I'm a web developer from Nigeria. I'm focused on creating clean and user-friendly experiences</p>
 				</section>
 	
 				<!-- About section -->
@@ -31,9 +37,19 @@
 					<div class="about-contents">
 						<h3 class="h3">ABOUT</h3>
 						<img src="https://res.cloudinary.com/dipyaby4f/image/upload/v1606997376/rsz_1rsz_124af6979-44a9-4705-b956-9fff2abd0be1l0001_1.jpg" id="my-photo" alt="A brown-skinned lady smiling">
-						<p class="description">I'm a frontend developer based in Lagos, Nigeria. I find the idea of building a thing from scratch and watching it come to life before your eyes deeply satisfying. My major focus is on HTML, CSS and JavaScript, and I have made use of them in building <a href="#projects" class="highlight project-link">several projects</a>. I'm currently looking for internships or junior roles, though I'm open to freelance opportunities.<br> 
-						In my leisure, I enjoy reading books and listening to music. I'm currently learning French. I also love to work out and keep in shape.</p>
-						<a href="#contact" class="contact-link">Let's make something great together!</a>
+						<p class="description">I am a frontend developer based in Lagos, Nigeria. I find the idea of building a thing from scratch and watching it come to life before your eyes deeply satisfying. My major focus is on HTML, CSS and JavaScript, and I have made use of them in building <a href="#projects" class="highlight project-link">several projects</a>.</p> 
+
+						<p class="coding-stats">
+							<a href="https://wakatime.com"><img src="https://wakatime.com/share/@Tolu/f16d467e-c936-4698-8989-7fd61e388ac5.png" /></a>
+						</p>
+
+						<p class="coding-stats">
+							<a href="https://wakatime.com"><img src="https://wakatime.com/share/@Tolu/d85570bf-e38b-474a-8c72-a3e58f1b32f7.png" /></a>
+						</p>
+
+						<p class="description">I am currently looking for internships or junior roles, though I'm open to freelance opportunities.<br> 
+						In my leisure, I enjoy reading books and listening to music. I am currently learning French. I also love to work out and keep in shape.
+						<a href="#contact" class="contact-link">Let's make something great together!</a></p>
 					</div>
 				</section>
 	
@@ -43,43 +59,45 @@
 					
 					<div class="project-items">
 						<div class="project-item">
-							<h4>Hex color picker</h4>
-							<div class="project-image hex-image"></div>
-							<!-- <img src="https://res.cloudinary.com/dipyaby4f/image/upload/v1607094908/2020-12-04_13.07.45_tolu-color-picker.surge.sh_f5725fbf68e7.png" alt="A page with a pink background" class="project-image"> -->
-							<button class="btn project-btn"><a href="https://tolu-color-picker.surge.sh" target="_blank">View this project</a></button>
+							<a href="https://tolu-color-picker.surge.sh" target="_blank">
+								<h4>Hex color picker</h4>
+								<div class="project-image hex-image"></div>
+							</a>
 						</div>
 	
 						<div class="project-item">
-							<h4>Random-quote machine</h4>
-							<div class="project-image quote-image"></div>
-							<!-- <img src="https://res.cloudinary.com/dipyaby4f/image/upload/v1607083902/2020-12-04_13.11.08_tolu-quote-machine.surge.sh_e2ccb3ba3b7d.png" alt="A page with a quote" class="project-image"> -->
-							<button class="btn project-btn"><a href="https://tolu-quote-machine.surge.sh" target="_blank">View this project</a></button>
+							<a href="https://tolu-quote-machine.surge.sh" target="_blank">
+								<h4>Random quote machine</h4>
+								<div class="project-image quote-image"></div>
+							</a>
 						</div>
 	
 						<div class="project-item">
-							<h4>Weather app</h4>
-							<div class="project-image weather-image"></div>
-							<!-- <img src="https://res.cloudinary.com/dipyaby4f/image/upload/v1607084071/2020-12-04_13.14.16_tolu-weather-app.surge.sh_8d85e8ab9ee6.png" alt="" class="project-image"> -->
-							<button class="btn project-btn"><a href="https://tolu-weather-app.surge.sh" target="_blank">View this project</a></button>
+							<a href="https://tolu-weather-app.surge.sh" target="_blank">
+								<h4>Weather app</h4>
+								<div class="project-image weather-image"></div>
+							</a>
 						</div>
 	
 						<div class="project-item">
-							<h4>FreeCodeCamp page replica</h4>
-							<div class="project-image fcc-image"></div>
-							<button class="btn project-btn"><a href="https://tolu-fcc-replica.surge.sh" target="_blank">View this project</a></button>
+							<a href="https://tolu-fcc-replica.surge.sh" target="_blank">
+								<h4>FreeCodeCamp page replica</h4>
+								<div class="project-image fcc-image"></div>
+							</a>
 						</div>
 	
 						<div class="project-item">
-							<h4>Simon game</h4>
-							<div class="project-image simon-image"></div>
-							<button class="btn project-btn"><a href="https://tolu-simon-game.surge.sh" target="_blank">View this project</a></button>
+							<a href="https://tolu-simon-game.surge.sh" target="_blank">
+								<h4>Simon game</h4>
+								<div class="project-image simon-image"></div>
+							</a>
 						</div>
 	
-						<div class="project-item">
-							<h4>Unsplash photo search app</h4>
-							<div class="project-image unsplash-image"></div>
-							<!-- <img src="" alt="A grid of photos"> -->
-							<button class="btn project-btn"><a href="https://tolu-unsplash-app.surge.sh" target="_blank">View this project</a></button>
+						<div class="project-item last">
+							<a href="https://tolu-unsplash-app.surge.sh" target="_blank">
+								<h4>Unsplash photo search app</h4>
+								<div class="project-image unsplash-image"></div>
+							</a>
 						</div>
 					</div>
 
@@ -89,8 +107,6 @@
 				<section id="contact">
 					<h3 class="h3 contact-h3">CONTACT</h3>
 					<p class="contact-sentence highlight">Have a question or want to work together?</p>
-
-					<!-- If you would love to have me on board on an exciting project or just want to say hello, feel free to email me or send me a message on any of the social sites listed below! -->
 
 					<form action="https://formspree.io/f/mrgoybkk" method="POST" class="form">
 						<label for="name">
@@ -106,13 +122,14 @@
 						</label>
 
 						<div class="submit">
-							<button type="submit" class="btn submit-btn">SUBMIT</button>
+							<button type="submit" class="submit-btn">SUBMIT</button>
 						</div>
 					</form>
 
 				</section>
 			</div>
 
+			<!-- Footer -->
 			<footer>
 				<ul class="social-links">
 					<li class="social-item"><a href="https://github.com/toluagboola" target="_blank">GITHUB</a> | </li>
@@ -126,13 +143,7 @@
 			</footer>
 		</div>
 
-		<!-- <script type="text/javascript">
-			function ModifyEnterKeyPressAsTab() {
-    		if (window.event && window.event.keyCode == 13) {
-        window.event.keyCode = 9;
-    		}
-			}
-		</script> -->
+		<script type="text/javascript" src="main.js"></script>
 
 	</body>
 </html>
