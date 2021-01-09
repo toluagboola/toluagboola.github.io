@@ -500,4 +500,16 @@ footer li a:hover {
     display: inline-block;
     margin-left: auto;
   }
+
+  .social-links {
+    padding-bottom: 10px;
+  }
+
+  footer li {
+    font-size: 1em;
+  }
+
+  .footnote {
+    font-size: 1.1em;
+  }
 }
