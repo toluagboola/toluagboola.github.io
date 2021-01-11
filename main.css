@@ -243,6 +243,12 @@ header .navbar {
   background-position: center center;
 }
 
+.calculator-image {
+  background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1610376905/2021-01-11_15.53.31_1413b202f311.png);
+  background-size: cover;
+  background-position: center center;
+}
+
 .unsplash-image {
   background-image: url(https://res.cloudinary.com/dipyaby4f/image/upload/v1607456600/2020-12-08_20.42.58_tolu-unsplash-app.surge.sh_d75ed0ea5b8d.png);
   background-size: cover;
