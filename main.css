@@ -266,15 +266,7 @@ header .logo {
   display: none;
 }
 
-.coding-stats {
-  padding: 30px;
-}
 
-.coding-stats a img {
-  max-width: 100%;
-  height: auto;
-  max-height: 500px;
-}
 
 /* Projects Section
   ==========================================================================
