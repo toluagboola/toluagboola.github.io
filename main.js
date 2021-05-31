@@ -1,24 +1,25 @@
-const navbar = document.querySelector(".js-navbar");
-const links = document.querySelectorAll('.js-nav-item');
-const sections = document.querySelectorAll('section');
+document.addEventListener('DOMContentLoaded', () => {
 
-function showMenu(x) {
-  x.classList.toggle('change');
-  if (navbar.style.display === "block") {
-    navbar.style.display = "none";
-  } else {
-    navbar.style.display = "block";
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
   }
-}
 
-function changeLinkState() {
-  let index = sections.length;
-
-  while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
-  
-  links.forEach((link) => link.classList.remove('active'));
-  links[index].classList.add('active');
-}
-
-changeLinkState();
-window.addEventListener('scroll', changeLinkState);
+});
