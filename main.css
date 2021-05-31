@@ -10252,6 +10252,7 @@ body {
 
 .projects {
   background: #f9f9fa;
+  border-bottom: 1px solid #ddd;
 }
 
 .project {
