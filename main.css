@@ -10304,7 +10304,8 @@ body {
   margin: 0 5px;
 }
 .footer-link:hover {
-  color: #3298dc;
+  color: #fff;
+  opacity: 0.7;
 }
 
 .svg {
