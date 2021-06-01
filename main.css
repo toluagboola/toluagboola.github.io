@@ -10229,7 +10229,7 @@ body {
 .hero-img {
   width: 200px;
   border-radius: 50%;
-  margin: 2rem 0;
+  margin: 3.5rem 0 2rem 0;
 }
 
 #about {
@@ -10275,7 +10275,8 @@ body {
 }
 
 .project-img {
-  width: 50%;
+  width: 576px;
+  height: 285px;
   border-radius: 5px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
@@ -10285,8 +10286,16 @@ body {
 }
 
 .send-message {
+  color: #fff;
   width: 100%;
   padding: 20px;
+  border: none;
+  background-color: #3e8ed0;
+}
+.send-message:hover {
+  color: #fff;
+  opacity: 0.9;
+  border: none;
 }
 
 .footer {
