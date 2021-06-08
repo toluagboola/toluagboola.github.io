@@ -69,11 +69,10 @@ body {
 	fill: currentColor;
 }
 
-
 .projects {
 	background: #f9f9fa;
 	border-bottom: 1px solid #ddd;
-} 
+}
 
 .project {
 	@include flex-container;
@@ -94,7 +93,8 @@ body {
 
 .project-img {
 	border-radius: 5px;
-	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+	box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+		0 0px 0 1px rgb(10 10 10 / 2%);
 }
 
 #contact > div {
@@ -109,7 +109,7 @@ body {
 	background-color: #3e8ed0;
 	&:hover {
 		color: #fff;
-		opacity: .9;
+		opacity: 0.9;
 		border: none;
 	}
 }
@@ -136,7 +136,16 @@ body {
 	display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+	.nav-logo {
+		font-size: 1.3rem !important;
+	}
+
+	.skill-items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 	.project {
 		padding: 1em 0 !important;
 		text-align: center;
@@ -151,7 +160,6 @@ body {
 	.project-desc {
 		width: 100%;
 		.buttons {
-			flex-direction: column;
 			justify-content: center;
 		}
 	}
@@ -168,3 +176,9 @@ body {
 	}
 }
 
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.skill-items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
